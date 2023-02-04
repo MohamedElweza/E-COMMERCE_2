@@ -1,5 +1,7 @@
 import 'package:T3ala/local/fav_sqlite/dbHelper_Fav.dart';
+import 'package:T3ala/screens/home.dart';
 import 'package:T3ala/screens/splash_screen.dart';
+import 'package:T3ala/screens/tabsscreen.dart';
 import 'package:flutter/material.dart';
 import 'local/cart_sqlite/db_helper_Cart.dart';
 
@@ -20,7 +22,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.orange,
       ),
-      home: const SplashScreen(),
+      home:  TabsScreen(),
     );
   }
 }

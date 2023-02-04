@@ -82,9 +82,10 @@ class _DetailsState extends State<Details> {
                         widget.data.name,
                         maxLines: 2,
                         style: const TextStyle(
-                            color: Color(0xff0A947D),
+                            color: Colors.green,
                             fontWeight: FontWeight.bold,
-                            fontSize: 25),
+                            fontSize: 25,
+                        ),
                       ),
                     ),
                     IconButton(
@@ -153,14 +154,21 @@ class _DetailsState extends State<Details> {
                           Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: Container(
+                              height: 25,
+                              width: 19,
                               decoration: BoxDecoration(
-                                  border: Border.all(color: Colors.redAccent)),
-                              child: Text(
-                                num.toString(),
-                                style: const TextStyle(
-                                    fontFamily: 'Myfont',
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 20),
+                                  border: Border.all(color: Colors.redAccent),
+                                  shape: BoxShape.circle,
+                              ),
+                              child: Padding(
+                                padding: const EdgeInsets.only(left: 3.0),
+                                child: Text(
+                                  num.toString(),
+                                  style: const TextStyle(
+                                      fontFamily: 'Myfont',
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 20),
+                                ),
                               ),
                             ),
                           ),

@@ -47,7 +47,7 @@ class ProductScreen extends StatelessWidget {
                   Products products = snapshot.data!.products[index];
                   return GestureDetector(
                     onTap: () {
-                      Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: Details(products)));
+                      Navigator.push(context, PageTransition(type: PageTransitionType.bottomToTop, child: Details(products)));
                     },
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),

@@ -101,6 +101,56 @@ class _HomeState extends State<Home> {
       body:
       Column(
         children: [
+      Container(
+      margin: EdgeInsets.only(top: 15, left: 10, right: 10),
+      child: Column(
+        children: [
+          Row(
+            children: [
+              Flexible(
+                flex: 1,
+                child: Material(
+                  elevation: 5.0,
+                  shadowColor: Colors.blue,
+                  child: TextField(
+                    cursorColor: Colors.grey,
+                    decoration: InputDecoration(
+                        fillColor: Colors.white,
+                        filled: true,
+                        border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(10),
+                            borderSide: BorderSide.none,
+                        ),
+                        hintText: 'Search',
+                        hintStyle: const TextStyle(
+                            color: Colors.grey,
+                            fontSize: 18
+                        ),
+                        prefixIcon: Container(
+                          padding: const EdgeInsets.all(15),
+                          width: 18,
+                          child: const Icon(Icons.search),
+                        )
+                    ),
+                  ),
+                ),
+              ),
+              Container(
+                  margin: EdgeInsets.only (left: 10),
+                  // padding: EdgeInsets.all(15),
+                  decoration: BoxDecoration(
+                      color: Colors.green,
+                      borderRadius: BorderRadius.circular(15)
+                  ),
+                  child: Icon(Icons.manage_search),
+                  width: 45,
+                height: 55,
+              ),
+            ],
+          )
+        ],
+      ),
+    ),
           const SizedBox(height: 15,),
           CarouselSlider(
               items: Offer_imgs.map((image) {
