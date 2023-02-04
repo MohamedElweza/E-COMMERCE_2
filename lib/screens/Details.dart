@@ -130,7 +130,7 @@ class _DetailsState extends State<Details> {
                         fontSize: 30,
                         fontWeight: FontWeight.bold,
                         fontFamily: 'Myfont',
-                        color: Colors.deepPurple,
+                        color: Colors.redAccent,
                       ),
                     ),
                     Padding(
@@ -199,12 +199,12 @@ class _DetailsState extends State<Details> {
                     const Text(
                       "Color: ",
                       style: TextStyle(
-                          fontFamily: 'Myfont', fontWeight: FontWeight.bold),
+                          fontFamily: 'Myfont', fontWeight: FontWeight.bold, fontSize: 15),
                     ),
                     Text(
                       widget.data!.colour,
                       style: const TextStyle(
-                          color: Colors.black, fontWeight: FontWeight.bold),
+                          color: Colors.black, fontWeight: FontWeight.bold, fontSize: 15),
                     ),
                   ],
                 ),
@@ -221,12 +221,13 @@ class _DetailsState extends State<Details> {
                       style: TextStyle(
                         fontFamily: 'Myfont',
                         fontWeight: FontWeight.bold,
+                          fontSize: 15
                       ),
                     ),
                     Text(
                       widget.data!.brandName,
                       style: const TextStyle(
-                          color: Colors.red, fontWeight: FontWeight.bold),
+                          color: Colors.red, fontWeight: FontWeight.bold, fontSize: 15),
                     ),
                   ],
                 ),
@@ -241,12 +242,12 @@ class _DetailsState extends State<Details> {
                     const Text(
                       "productCode: ",
                       style: TextStyle(
-                          fontFamily: 'Myfont', fontWeight: FontWeight.bold),
+                          fontFamily: 'Myfont', fontWeight: FontWeight.bold, fontSize: 15),
                     ),
                     Text(
                       widget.data!.productCode.toString(),
                       style: const TextStyle(
-                          color: Colors.red, fontWeight: FontWeight.bold),
+                          color: Colors.red, fontWeight: FontWeight.bold, fontSize: 15),
                     ),
                   ],
                 ),
@@ -261,7 +262,7 @@ class _DetailsState extends State<Details> {
                     style: TextStyle(
                         fontFamily: 'Myfont',
                         fontWeight: FontWeight.bold,
-                        fontSize: 17),
+                        fontSize: 23),
                   ),
                   Padding(
                     padding: const EdgeInsets.all(8.0),
