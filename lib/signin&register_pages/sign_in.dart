@@ -77,7 +77,7 @@ class _SignInState extends State<SignIn> {
                 GetTextFormField(
                     controller: _conUserId,
                     icon: Icons.person,
-                    hintName: 'User Name'),
+                    hintName: 'User ID'),
                 const SizedBox(height: 10.0),
                 GetTextFormField(
                   controller: _conPassword,
