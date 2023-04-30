@@ -5,13 +5,14 @@ class Fav {
   late String image;
   late String name;
   dynamic price;
-
+  int? IsSelected;
 
   Fav({
     this.id,
     required this.image,
     required this.price,
     required this.name,
+    this.IsSelected,
   });
 
   Fav.fromMap(Map<String, dynamic> map) {

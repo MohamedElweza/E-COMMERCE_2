@@ -47,7 +47,7 @@ class _IntroScreenState extends State<IntroScreen> {
                         padding: const EdgeInsets.only(right: 10.0),
                         child: ElevatedButton(
                             style: ElevatedButton.styleFrom(
-                                backgroundColor: Colors.deepPurple,
+                                // backgroundColor: Colors.deepPurple,
                                 shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(10.0))),
                             onPressed: () {
@@ -69,7 +69,7 @@ class _IntroScreenState extends State<IntroScreen> {
                               padding: const EdgeInsets.only(right: 10.0),
                               child: ElevatedButton(
                                   style: ElevatedButton.styleFrom(
-                                      backgroundColor: Colors.deepPurple,
+                                      // backgroundColor: Colors.deepPurple,
                                       shape: RoundedRectangleBorder(
                                           borderRadius:
                                               BorderRadius.circular(10.0))),
@@ -91,7 +91,7 @@ class _IntroScreenState extends State<IntroScreen> {
                               padding: const EdgeInsets.only(right: 10.0),
                               child: ElevatedButton(
                                   style: ElevatedButton.styleFrom(
-                                      backgroundColor: Colors.deepPurple,
+                                      // backgroundColor: Colors.deepPurple,
                                       shape: RoundedRectangleBorder(
                                           borderRadius:
                                               BorderRadius.circular(10.0))),

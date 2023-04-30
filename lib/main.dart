@@ -1,8 +1,10 @@
 import 'package:T3ala/local/fav_sqlite/dbHelper_Fav.dart';
+import 'package:T3ala/provider/provider.dart';
 import 'package:T3ala/screens/home.dart';
 import 'package:T3ala/screens/splash_screen.dart';
 import 'package:T3ala/screens/tabsscreen.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'local/cart_sqlite/db_helper_Cart.dart';
 
 void main() async {
@@ -17,12 +19,15 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.orange,
+    return  ChangeNotifierProvider(
+      create: (_) => MyProvider(),
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        theme: ThemeData(
+          primarySwatch: Colors.orange,
+        ),
+        home:  const SplashScreen(),
       ),
-      home:  const SplashScreen(),
     );
   }
 }

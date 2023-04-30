@@ -6,6 +6,7 @@ final String columnId = 'id';
 final String columnImage = 'image';
 final String columnPrice = 'price';
 final String columnName = 'name';
+ int IsSelected = 0;
 
 class FavProvider {
   late Database db;

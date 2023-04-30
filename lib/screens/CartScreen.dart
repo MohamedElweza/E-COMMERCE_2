@@ -183,7 +183,7 @@ class _CartState extends State<Cart> {
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(30.0),
                       ),
-                      backgroundColor: Colors.black,
+                      // backgroundColor: Colors.black,
                     ),
                     child: const Text(
                       'Checkout',
